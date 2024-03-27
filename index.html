@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="https://kit.fontawesome.com/a14ae32021.js" crossorigin="anonymous"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Un regalito virtual para tí <3 </title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+<div>
+    <style>
+		.animated {
+			-webkit-animation-duration: 1s;
+			animation-duration: 1s;
+			-webkit-animation-fill-mode: both;
+			animation-fill-mode: both;
+		}
+
+		.animated.faster {
+			-webkit-animation-duration: 500ms;
+			animation-duration: 500ms;
+		}
+
+		.fadeIn {
+			-webkit-animation-name: fadeIn;
+			animation-name: fadeIn;
+		}
+
+		.fadeOut {
+			-webkit-animation-name: fadeOut;
+			animation-name: fadeOut;
+		}
+
+		@keyframes fadeIn {
+			from {
+				opacity: 0;
+			}
+
+			to {
+				opacity: 1;
+			}
+		}
+
+		@keyframes fadeOut {
+			from {
+				opacity: 1;
+			}
+
+			to {
+				opacity: 0;
+			}
+		}
+	</style>
+
+	<div class="main-modal fixed w-full h-100 inset-0 z-50 overflow-hidden flex justify-center items-center animated fadeIn faster"
+		style="background: rgba(0,0,0,.7);">
+		<div
+			class="border border-teal-500 shadow-lg modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
+			<div class="modal-content py-4 text-left px-6">
+				<!--Title-->
+				<div class="flex justify-between items-center pb-3">
+					<p class="text-2xl font-bold">Nuestra foto favorita <3 </p>
+					<div class="modal-close cursor-pointer z-50">
+						<svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+							viewBox="0 0 18 18">
+							<path
+								d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z">
+							</path>
+						</svg>
+					</div>
+				</div>
+				<!--Body-->
+				<div class="my-5">
+					<img src="foto.jpg">
+				</div>
+				<!--Footer-->
+				<div class="flex justify-end pt-2">
+					<button
+						class="focus:outline-none modal-close px-4 bg-gray-400 p-3 rounded-lg text-black hover:bg-gray-300">Cerrar</button>
+					<button style="display: none;"
+						class="focus:outline-none px-4 bg-teal-500 p-3 ml-3 rounded-lg text-white hover:bg-teal-400">Guardar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		const modal = document.querySelector('.main-modal');
+		const closeButton = document.querySelectorAll('.modal-close');
+
+		const modalClose = () => {
+			modal.classList.remove('fadeIn');
+			modal.classList.add('fadeOut');
+			setTimeout(() => {
+				modal.style.display = 'none';
+			}, 500);
+		}
+
+		const openModal = () => {
+			modal.classList.remove('fadeOut');
+			modal.classList.add('fadeIn');
+			modal.style.display = 'flex';
+		}
+
+		for (let i = 0; i < closeButton.length; i++) {
+
+			const elements = closeButton[i];
+
+			elements.onclick = (e) => modalClose();
+
+			modal.style.display = 'none';
+
+			window.onclick = function (event) {
+				if (event.target == modal) modalClose();
+			}
+		}
+	</script>
+</div>
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<span class="comments">/**</span><br />
+			<span class="space"/><span class="comments">*Codigo del Amor</span><br />
+			<span class="space"/><span class="comments">*/</span><br />
+			Hola mi Amor <3 !<br />
+			Recuerdas el día qué nos conocimos?<br />
+			<span class="comments">// Un tal Martes 22 de Agosto. </span><br />
+			Desde ese día, supe que contigo tendría todo lo que siempre busqué;<br />
+			<span class="comments">// Tu forma de expresar tu cariño, tu lealtad, tu compañia, es algo que jamás olvidaré y por siempre amaré.</span><br />
+			Amo cada parte de tí, sea como sea, la amo cada día más <3 <br />
+			Siempre recuerdo que tus brazos, son mi lugar seguro, dónde puedo comentar mis ideas, problemas, momentos felices, se que contigo;<br />
+            puedo hablar de lo qué sea, y eso me hace sentirme muy seguro estando contigo uwu.
+			Me hace demasiado feliz pensar en el haberte conocido, y más aún cuando las cosas funcionaban mejor <3 <br />
+			Contigo quiero todo, vivir juntitos, dormir juntitos, ver peliculas juntitos, TODO pero Juntitos uwu.<br />
+			Quiero viajar por el mundo con tu compañia, vivir una vida llena de amor <3 <br />
+			Pase lo que pase, siempre podremos solucionar los problemas que se presenten en el día a día, eso lo tengo muy claro jiji <3 ;<br />
+			<span class="comments">// Estoy seguro de haber escogido la persona correcta <3 </span><br />
+			Actualmente, eres un pilar para mi vida, sin tu presencia las cosas no se sienten bien, o con un simple buenos días de ti, mi día comienza de otra manera<3 <br />
+			<br>
+			<br>
+			Gracias por tantos momentos lindos y espero que sean infinitos, tiamo mucho mi bichita <3 <br />
+			Amor, te quiero para toda la vida y te amaré toda la vida <3 <br />
+			<br>
+			<br>
+			Ahora haz click en el corazón rojo, es una pequeña sorpresa jiji <3 <br />
+			<br>
+			<span id="heartspan">
+			<a onclick="openModal()"><i class="fas fa-heart" id="icon"></i></a>
+			</span>
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					Por una vida completa juntos <3
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					TE AMO  <3 <br/>
+					<div class="signature">De: Andrés <3 </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2023, 8,22);
+together.setHours(18);
+together.setMinutes(30);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+</body>
+</html>
